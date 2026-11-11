@@ -1,0 +1,303 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Feliz cumpleaños, Mi Princesa</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,500;1,400;1,500&family=Quicksand:wght@400;500;600&display=swap">
+<style>
+/* Layout: carta de cumpleaños rosada — portada con corona y foto en arco, sorpresa, video, libro de fotos que se hojea y su mensaje en un sobre. Un solo look rosado, a propósito. */
+:root{
+  --bg:#fff0f5; --bg-2:#ffe1ec; --pink:#f48fb1; --pink-deep:#e0457b; --berry:#a8235a;
+  --ink:#5a1a36; --muted:#9a5876; --white:#ffffff; --gold:#d9a35f;
+  --script:"Great Vibes","Brush Script MT",cursive;
+  --serif:"Playfair Display",Georgia,serif;
+  --sans:"Quicksand","Helvetica Neue",Arial,sans-serif;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html{scroll-behavior:smooth;overflow-x:clip}
+body{background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.7;overflow-x:hidden;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));
+  background-image:
+    radial-gradient(circle at 12% 8%,#ffd0e1 0,transparent 32%),
+    radial-gradient(circle at 92% 22%,#ffe4ee 0,transparent 30%),
+    radial-gradient(circle at 80% 85%,#ffd6e6 0,transparent 35%),
+    radial-gradient(circle at 5% 70%,#fff 0,transparent 30%);
+  background-attachment:fixed}
+.wrap{max-width:1080px;margin:0 auto;position:relative;z-index:1}
+.eyebrow{font-weight:600;letter-spacing:.3em;text-transform:uppercase;font-size:.72rem;color:var(--pink-deep)}
+h2{font-family:var(--script);font-weight:400;font-size:clamp(2.8rem,7vw,4.2rem);line-height:1;margin:.15em 0 .2em;color:var(--berry);text-wrap:balance}
+section{padding-block:clamp(56px,9vw,110px)}
+.divider{display:flex;align-items:center;justify-content:center;gap:14px;color:var(--pink);margin-top:6px}
+.divider::before,.divider::after{content:"";height:1px;width:60px;background:linear-gradient(90deg,transparent,var(--pink))}
+.divider::after{transform:scaleX(-1)}
+
+/* Portada */
+.hero{display:grid;grid-template-columns:1fr 1.05fr;gap:clamp(28px,6vw,72px);align-items:center;padding-block:clamp(40px,8vw,90px) 30px}
+.hero-photo{position:relative;justify-self:center;width:min(100%,410px)}
+.hero-photo img{position:relative;z-index:1;display:block;width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 30%;border-radius:220px 220px 24px 24px;border:8px solid var(--white);box-shadow:0 30px 70px -25px #e0457b88}
+.hero-photo::before{content:"";position:absolute;inset:-18px -18px 18px 18px;border-radius:230px 230px 30px 30px;background:linear-gradient(160deg,var(--pink),#ffc2d6);z-index:0}
+.crown{position:absolute;z-index:2;top:-44px;left:50%;transform:translateX(-50%) rotate(-6deg);width:96px;filter:drop-shadow(0 6px 10px #a8235a44)}
+.tag{position:absolute;z-index:2;bottom:22px;right:-14px;background:var(--white);color:var(--berry);font-family:var(--script);font-size:1.9rem;padding:4px 22px 8px;border-radius:999px;box-shadow:0 10px 24px -8px #a8235a55;transform:rotate(-4deg)}
+.hero-text{min-width:0}
+.hero h1{margin:.2em 0 0;font-weight:400}
+.hero .feliz{display:block;font-family:var(--serif);font-style:italic;font-size:clamp(1.5rem,3.2vw,2.1rem);color:var(--muted);letter-spacing:.01em}
+.hero .name{display:block;font-family:var(--script);font-size:clamp(4.4rem,12vw,8rem);line-height:.95;color:var(--pink-deep);text-shadow:0 4px 0 #ffd0e1,0 10px 30px #f48fb166;margin-top:.05em}
+.hero p{color:var(--muted);max-width:32ch;font-size:1.08rem;font-weight:500}
+.btn{appearance:none;border:0;background:linear-gradient(135deg,var(--pink-deep),var(--pink));color:var(--white);font-family:var(--sans);font-weight:600;font-size:.92rem;letter-spacing:.14em;text-transform:uppercase;padding:16px 30px;border-radius:999px;cursor:pointer;box-shadow:0 14px 30px -10px #e0457b;transition:transform .25s,box-shadow .25s;margin-top:8px;animation:pulse 2.4s ease-in-out infinite}
+.btn:hover{transform:translateY(-2px) scale(1.02);box-shadow:0 18px 36px -10px #e0457b}
+.btn:focus-visible{outline:3px solid var(--berry);outline-offset:4px}
+@keyframes pulse{0%,100%{box-shadow:0 14px 30px -10px #e0457b}50%{box-shadow:0 14px 40px -6px #f48fb1}}
+
+/* Sorpresa */
+.surprise{text-align:center;max-width:640px;margin:10px auto 0;background:var(--white);border-radius:28px;padding:34px 26px;box-shadow:0 24px 60px -30px #e0457b99;border:2px dashed #f8bbd0}
+.surprise .cake{font-size:3rem;line-height:1}
+.surprise-msg{font-family:var(--serif);font-style:italic;font-size:clamp(1.3rem,3.2vw,1.7rem);line-height:1.4;color:var(--berry);margin:10px auto 0;max-width:28ch;text-wrap:balance}
+
+/* Video */
+.film{display:grid;grid-template-columns:minmax(0,360px) minmax(0,1fr);gap:clamp(28px,6vw,72px);align-items:center}
+.phone{background:var(--white);padding:12px;border-radius:34px;box-shadow:0 30px 70px -30px #a8235a88;transform:rotate(-2deg);width:100%}
+.phone video{width:100%;max-width:100%;aspect-ratio:9/16;border-radius:24px;background:#3a0f22;display:block}
+.film-text{min-width:0}
+.film-text p{color:var(--muted);max-width:40ch;font-weight:500}
+
+/* Álbum */
+.album-head{text-align:center;margin-bottom:40px}
+.album-head p{color:var(--muted);margin:0;font-weight:500}
+/* Libro de fotos */
+.book-stage{display:flex;justify-content:center;padding-block:10px 0}
+.book{position:relative;width:min(100%,900px);aspect-ratio:900/620;perspective:2400px;transition:transform .9s cubic-bezier(.4,.2,.2,1);cursor:pointer;outline:none}
+.book:focus-visible{outline:3px solid var(--pink-deep);outline-offset:10px;border-radius:12px}
+.book.closed{transform:translateX(-25%)}
+.book.ended{transform:translateX(25%)}
+.leaf{position:absolute;top:0;left:50%;width:50%;height:100%;transform-origin:left center;transform-style:preserve-3d;transition:transform 1s cubic-bezier(.45,.1,.2,1)}
+.leaf.flipped{transform:rotateY(-180deg)}
+.face{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;overflow:hidden;background:#fffafc;
+  background-image:radial-gradient(circle at 20% 15%,#ffe9f1 0,transparent 40%),radial-gradient(circle at 85% 90%,#ffeef4 0,transparent 45%);
+  border-radius:0 14px 14px 0;box-shadow:0 20px 40px -20px #a8235a88;display:flex;flex-direction:column;padding:7% 8% 6%}
+.face.back{transform:rotateY(180deg);border-radius:14px 0 0 14px}
+.face::after{content:"";position:absolute;top:0;bottom:0;width:14%;pointer-events:none}
+.face:not(.back)::after{left:0;background:linear-gradient(90deg,#c76b8f40,transparent)}
+.face.back::after{right:0;background:linear-gradient(-90deg,#c76b8f40,transparent)}
+.ph{flex:1;min-height:0;position:relative}
+.ph img{position:absolute;inset:0;margin:auto;max-width:100%;max-height:100%;width:auto;height:auto;display:block;box-sizing:border-box;border:7px solid var(--white);border-bottom-width:7px;box-shadow:0 10px 22px -10px #a8235a99;transform:rotate(var(--r,0deg))}
+.cap{font-family:var(--script);color:var(--berry);font-size:clamp(1.25rem,2.6vw,2rem);text-align:center;line-height:1.1;margin-top:5%}
+.pno{position:absolute;bottom:3.5%;font-size:.72rem;letter-spacing:.2em;color:var(--muted);font-weight:600}
+.face:not(.back) .pno{right:8%}
+.face.back .pno{left:8%}
+.cover{background:linear-gradient(150deg,#f48fb1,#e0457b 60%,#c2185b);color:var(--white);align-items:center;justify-content:center;text-align:center;gap:6px;border:0}
+.cover::before{content:"";position:absolute;inset:5%;border:2px solid #ffffff88;border-radius:8px;pointer-events:none}
+.cover .t1{font-size:.75rem;letter-spacing:.32em;text-transform:uppercase;font-weight:600;opacity:.9}
+.cover .t2{font-family:var(--script);font-size:clamp(2.4rem,6vw,4rem);line-height:1}
+.cover .t3{font-family:var(--serif);font-style:italic;font-size:clamp(.95rem,2vw,1.2rem);opacity:.95}
+.cover svg{width:28%;margin-bottom:4%}
+.endpage{align-items:center;justify-content:center;text-align:center}
+.endpage .big{font-family:var(--script);color:var(--pink-deep);font-size:clamp(2rem,4.4vw,3.2rem);line-height:1.05}
+.endpage p{font-family:var(--serif);font-style:italic;color:var(--ink);font-size:clamp(.95rem,1.8vw,1.15rem);max-width:22ch;margin:12px auto 0}
+.paper{background:#ffe3ec;background-image:radial-gradient(#f8bbd0 1.5px,transparent 1.6px);background-size:18px 18px}
+.book-nav{display:flex;align-items:center;justify-content:center;gap:22px;margin-top:28px;color:var(--muted);font-weight:600;letter-spacing:.14em;text-transform:uppercase;font-size:.78rem;font-variant-numeric:tabular-nums}
+.book-nav span{min-width:120px;text-align:center}
+.ctl[disabled]{opacity:.35;cursor:default}
+/* Celular: una página a la vez */
+.book.single{aspect-ratio:3/4.1;width:min(100%,400px);overflow:hidden;border-radius:14px}
+.book.single.closed,.book.single.ended{transform:none}
+.book.single .leaf{left:0;width:100%}
+.book.single .face{border-radius:14px}
+
+/* Carta */
+.letter{max-width:660px;margin:0 auto;position:relative;background:var(--white);border-radius:24px;padding:clamp(36px,6vw,60px) clamp(24px,6vw,60px);box-shadow:0 30px 70px -35px #a8235a99;
+  background-image:repeating-linear-gradient(180deg,transparent 0 43px,#fde3ec 43px 44px);background-position:0 30px}
+.letter::before{content:"";position:absolute;inset:10px;border:1.5px solid #f8bbd0;border-radius:18px;pointer-events:none}
+.letter p{font-family:var(--serif);font-size:1.25rem;line-height:44px;margin:0 0 44px;color:var(--ink)}
+.letter .dear{font-family:var(--script);font-size:3rem;color:var(--pink-deep);line-height:1;margin-bottom:28px}
+.letter .sign{font-family:var(--script);font-size:2.4rem;color:var(--berry);text-align:right;margin:0}
+.seal{position:absolute;top:-26px;left:50%;transform:translateX(-50%);width:54px;height:54px;border-radius:50%;background:radial-gradient(circle at 35% 35%,#f48fb1,#c2185b);display:grid;place-items:center;color:var(--white);font-size:1.4rem;box-shadow:0 8px 18px #a8235a66;z-index:2}
+
+footer{text-align:center;padding-block:20px 60px;color:var(--muted);font-weight:600;font-size:.78rem;letter-spacing:.24em;text-transform:uppercase}
+footer .big{font-family:var(--script);text-transform:none;letter-spacing:0;font-size:2.4rem;color:var(--pink-deep);display:block;font-weight:400}
+
+/* Lightbox */
+.lb{position:fixed;inset:0;background:#4a1029ee;display:grid;place-items:center;z-index:50;padding:max(16px,env(safe-area-inset-top,0px)) max(16px,env(safe-area-inset-right,0px)) max(16px,env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px))}
+.lb img{max-width:100%;max-height:86vh;border-radius:10px;border:6px solid var(--white);box-shadow:0 20px 60px #0008}
+.ctl{all:unset;cursor:pointer;color:var(--white);font-size:2rem;width:50px;height:50px;display:grid;place-items:center;border-radius:50%;background:var(--pink-deep);box-shadow:0 8px 20px #0005}
+.ctl:focus-visible{outline:3px solid var(--white)}
+.lb .x{position:absolute;top:calc(14px + env(safe-area-inset-top,0px));right:calc(14px + env(safe-area-inset-right,0px))}
+.lb .prev{position:absolute;left:calc(10px + env(safe-area-inset-left,0px));top:50%}
+.lb .next{position:absolute;right:calc(10px + env(safe-area-inset-right,0px));top:50%}
+
+/* Corazones flotando de fondo */
+.float{position:fixed;inset:0;pointer-events:none;z-index:0;overflow:hidden}
+.float span{position:absolute;bottom:-40px;color:var(--pink);opacity:.35;animation:up linear infinite}
+@keyframes up{to{transform:translateY(-115vh) rotate(25deg)}}
+canvas#fx{position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:40}
+
+@media (max-width:760px){
+  .hero{grid-template-columns:1fr;text-align:center}
+  .hero-photo{margin-top:40px;width:min(86%,360px)}
+  .hero p{margin-inline:auto}
+  .tag{right:-6px}
+  .film{grid-template-columns:1fr;justify-items:center;text-align:center}
+  .phone{max-width:320px}
+  .film-text p{margin-inline:auto}
+  .letter p{font-size:1.12rem}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}html{scroll-behavior:auto}.float{display:none}}
+</style>
+
+<div class="float" id="float" aria-hidden="true"></div>
+<canvas id="fx" aria-hidden="true"></canvas>
+
+<div class="wrap">
+  <header class="hero">
+    <div class="hero-photo">
+      <svg class="crown" viewBox="0 0 100 64" aria-hidden="true">
+        <path d="M6 54 L10 16 L30 36 L50 6 L70 36 L90 16 L94 54 Z" fill="#f6c768" stroke="#d9a35f" stroke-width="3" stroke-linejoin="round"/>
+        <rect x="6" y="50" width="88" height="10" rx="4" fill="#e9b04c"/>
+        <circle cx="10" cy="14" r="5" fill="#f48fb1"/><circle cx="50" cy="5" r="5" fill="#e0457b"/><circle cx="90" cy="14" r="5" fill="#f48fb1"/>
+        <circle cx="30" cy="55" r="3" fill="#fff"/><circle cx="50" cy="55" r="3.5" fill="#e0457b"/><circle cx="70" cy="55" r="3" fill="#fff"/>
+      </svg>
+      <img src="img/01.jpg" alt="Mi princesa sonriendo">
+      <div class="tag">te amo</div>
+    </div>
+    <div class="hero-text">
+      <div class="eyebrow">hoy es tu día</div>
+      <h1>
+        <span class="feliz">Feliz cumpleaños,</span>
+        <span class="name">Mi Princesa</span>
+      </h1>
+      <div class="divider">♥</div>
+      <p>Hoy celebramos el día en que llegó al mundo la persona más bonita que conozco. Esta página es solo para ti.</p>
+      <button class="btn" id="open" type="button">Abrir tu sorpresa ♥</button>
+    </div>
+  </header>
+
+  <div class="surprise" id="surprise" hidden>
+    <div class="cake" aria-hidden="true">🎂</div>
+    <div class="eyebrow">pide un deseo</div>
+    <p class="surprise-msg">Que Dios te llene de bendiciones hoy y siempre, mi amor. Este año va a ser hermoso, como tú.</p>
+  </div>
+
+  <section class="film" id="video">
+    <div class="phone"><video src="video.mp4" poster="poster.jpg" controls playsinline preload="metadata"></video></div>
+    <div class="film-text">
+      <div class="eyebrow">nuestra película</div>
+      <h2>Un ratito de nosotros</h2>
+      <p>Las risas, las salidas, las noches viendo la ciudad desde arriba y todos esos momentos que quiero repetir contigo. Dale play con sonido.</p>
+    </div>
+  </section>
+
+  <section id="album">
+    <div class="album-head">
+      <div class="eyebrow">nuestro libro</div>
+      <h2>Momentos que guardo</h2>
+      <p>Toca las páginas o las flechas para pasar las hojas</p>
+    </div>
+    <div class="book-stage">
+      <div class="book" id="book" tabindex="0" aria-label="Libro de fotos. Usa las flechas para pasar las páginas."></div>
+    </div>
+    <div class="book-nav">
+      <button class="ctl" id="bprev" type="button" aria-label="Página anterior">‹</button>
+      <span id="bcount" aria-live="polite">Portada</span>
+      <button class="ctl" id="bnext" type="button" aria-label="Página siguiente">›</button>
+    </div>
+  </section>
+
+  <section id="carta">
+    <article class="letter">
+      <div class="seal" aria-hidden="true">♥</div>
+      <p class="dear">Para mi princesa,</p>
+      <p>Feliz cumpleaños, amor. Espero que Dios te siga dando muchos más años de vida, y que este día sea muy lindo y que la pases súper bien al lado de todos los seres queridos y las personas que aprecias mucho.</p>
+      <p>Te amo mucho, amor, y le doy gracias a Dios por un año más de vida y por compartirlo conmigo.</p>
+      <p class="sign">Te amo mucho ♥</p>
+    </article>
+  </section>
+
+  <footer>
+    <span class="big">Feliz cumpleaños, mi amor</span>
+    Hecho con amor para mi princesa
+  </footer>
+</div>
+
+<script>
+const caps=["Tu sonrisa, mi cosa favorita","Tú y yo","Noches contigo","Risas que no se olvidan","Mi lugar favorito: a tu lado","Qué bonita eres","Nuestras salidas","Siempre juntos","La ciudad desde arriba","Pequeños grandes momentos","Mi princesa","Hasta dormida eres hermosa","Una noche especial","Tú y yo, siempre","Esa mirada","Mi persona favorita","Mi niña linda","Te amo"];
+const crown='<svg viewBox="0 0 100 64" aria-hidden="true"><path d="M6 54 L10 16 L30 36 L50 6 L70 36 L90 16 L94 54 Z" fill="#f6c768" stroke="#fff3" stroke-width="3" stroke-linejoin="round"/><rect x="6" y="50" width="88" height="10" rx="4" fill="#e9b04c"/><circle cx="10" cy="14" r="5" fill="#fff"/><circle cx="50" cy="5" r="5" fill="#ffd0e1"/><circle cx="90" cy="14" r="5" fill="#fff"/></svg>';
+const pages=[{cls:'cover',html:`${crown}<div class="t1">nuestro libro de</div><div class="t2">Momentos</div><div class="t3">para Mi Princesa</div>`}];
+caps.forEach((c,i)=>{const r=[-2,1.5,-1,2,-1.5,1][i%6];
+  pages.push({html:`<div class="ph"><img src="img/${String(i+1).padStart(2,'0')}.jpg" alt="${c}" style="--r:${r}deg" draggable="false"></div><div class="cap">${c}</div><div class="pno">${i+1}</div>`});});
+pages.push({cls:'endpage',html:`<div class="big">Continuará…</div><p>Todavía nos faltan muchas páginas por escribir juntos. Te amo, mi princesa ♥</p>`});
+
+const book=document.getElementById('book'), prevB=document.getElementById('bprev'), nextB=document.getElementById('bnext'), count=document.getElementById('bcount');
+let leaves=[], cur=0, single=false;
+function face(p,back){const d=document.createElement('div');d.className='face'+(back?' back':'')+(p&&p.cls?' '+p.cls:'')+(p?'':' paper');d.innerHTML=p?p.html:'';return d;}
+function build(){
+  single=matchMedia('(max-width:700px)').matches;
+  book.classList.toggle('single',single); book.innerHTML=''; leaves=[];
+  const n=single?pages.length:Math.ceil(pages.length/2);
+  for(let i=0;i<n;i++){const l=document.createElement('div');l.className='leaf';
+    if(single){l.append(face(pages[i],false),face(null,true));}
+    else{l.append(face(pages[2*i],false),face(pages[2*i+1]||null,true));}
+    book.appendChild(l);leaves.push(l);}
+  render(true);
+}
+function render(instant){
+  leaves.forEach((l,i)=>{const f=i<cur;
+    if(instant)l.style.transition='none';
+    l.classList.toggle('flipped',f);
+    l.style.zIndex=f?i+1:leaves.length-i+leaves.length;
+    if(instant){l.offsetWidth;l.style.transition='';}
+    l.setAttribute('aria-hidden',(single? i!==cur : !(i===cur||i===cur-1))?'true':'false');});
+  book.classList.toggle('closed',!single&&cur===0);
+  book.classList.toggle('ended',!single&&cur===leaves.length);
+  prevB.disabled=cur===0; nextB.disabled=cur>=(single?leaves.length-1:leaves.length);
+  if(single){count.textContent=cur===0?'Portada':cur===pages.length-1?'Fin':`Página ${cur} de ${caps.length}`;}
+  else{count.textContent=cur===0?'Portada':cur===leaves.length?'Fin':`Páginas ${2*cur-1}–${Math.min(2*cur,caps.length)}`;}
+}
+function go(d){const max=single?leaves.length-1:leaves.length;const n=Math.max(0,Math.min(max,cur+d));if(n===cur)return;
+  const moving=d>0?leaves[cur]:leaves[n];moving.style.zIndex=999;cur=n;
+  leaves.forEach((l,i)=>{if(l!==moving){l.classList.toggle('flipped',i<cur);l.style.zIndex=i<cur?i+1:leaves.length-i+leaves.length;}});
+  moving.classList.toggle('flipped',d>0);
+  setTimeout(()=>render(false),1000);
+  render.call(null,false);moving.style.zIndex=999;}
+prevB.onclick=()=>go(-1); nextB.onclick=()=>go(1);
+book.addEventListener('click',e=>{const r=book.getBoundingClientRect();const x=e.clientX-r.left;
+  if(single){go(x<r.width*0.3?-1:1);}else{go(x<r.width/2?-1:1);}});
+book.addEventListener('keydown',e=>{if(e.key==='ArrowRight'){go(1);e.preventDefault();}if(e.key==='ArrowLeft'){go(-1);e.preventDefault();}});
+let sx=null;book.addEventListener('touchstart',e=>{sx=e.touches[0].clientX},{passive:true});
+book.addEventListener('touchend',e=>{if(sx===null)return;const dx=e.changedTouches[0].clientX-sx;sx=null;if(Math.abs(dx)>40){go(dx<0?1:-1);e.preventDefault();}});
+let lastSingle=null;function maybe(){const s=matchMedia('(max-width:700px)').matches;if(s!==lastSingle){lastSingle=s;const keep=cur;build();cur=0;render(true);}}
+maybe();addEventListener('resize',maybe);
+
+const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+// Corazones suaves flotando
+if(!reduce){const fl=document.getElementById('float');
+  for(let i=0;i<16;i++){const s=document.createElement('span');s.textContent='♥';
+    s.style.left=(Math.random()*100)+'%';s.style.fontSize=(12+Math.random()*22)+'px';
+    s.style.animationDuration=(14+Math.random()*16)+'s';s.style.animationDelay=(-Math.random()*25)+'s';fl.appendChild(s);}}
+
+// Lluvia de corazones y confeti
+const cv=document.getElementById('fx'), ctx=cv.getContext('2d'); let parts=[], running=false;
+function size(){cv.width=innerWidth*devicePixelRatio; cv.height=innerHeight*devicePixelRatio;} size(); addEventListener('resize',size);
+const cols=['#e0457b','#f48fb1','#ffc2d6','#f6c768','#ffffff','#c2185b'];
+function heart(x,y,s,c){ctx.fillStyle=c;ctx.beginPath();ctx.moveTo(x,y+s*.3);ctx.bezierCurveTo(x,y,x-s*.5,y,x-s*.5,y+s*.3);ctx.bezierCurveTo(x-s*.5,y+s*.6,x,y+s*.8,x,y+s);ctx.bezierCurveTo(x,y+s*.8,x+s*.5,y+s*.6,x+s*.5,y+s*.3);ctx.bezierCurveTo(x+s*.5,y,x,y,x,y+s*.3);ctx.fill();}
+function burst(){
+  const d=devicePixelRatio;
+  for(let i=0;i<200;i++)parts.push({x:Math.random()*cv.width,y:-Math.random()*cv.height*.7,vx:(Math.random()-.5)*1.2*d,vy:(1.2+Math.random()*2.4)*d,s:(9+Math.random()*16)*d,r:Math.random()*6,vr:(Math.random()-.5)*.08,c:cols[i%cols.length],h:Math.random()<.6});
+  if(!running){running=true;requestAnimationFrame(tick);}
+}
+function tick(){
+  ctx.clearRect(0,0,cv.width,cv.height);
+  parts=parts.filter(p=>p.y<cv.height+40);
+  for(const p of parts){p.x+=p.vx+Math.sin(p.y/60)*.6;p.y+=p.vy;p.r+=p.vr;
+    ctx.save();ctx.translate(p.x,p.y);ctx.rotate(p.r);
+    if(p.h)heart(0,-p.s/2,p.s,p.c);else{ctx.fillStyle=p.c;ctx.fillRect(-p.s/4,-p.s/8,p.s/2,p.s/4);}
+    ctx.restore();}
+  if(parts.length)requestAnimationFrame(tick);else{running=false;ctx.clearRect(0,0,cv.width,cv.height);}
+}
+document.getElementById('open').onclick=()=>{
+  const s=document.getElementById('surprise'); s.hidden=false;
+  if(!reduce)burst();
+  s.scrollIntoView({behavior:reduce?'auto':'smooth',block:'center'});
+};
+</script>
+
+</body></html>
